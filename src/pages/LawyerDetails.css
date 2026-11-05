@@ -1,0 +1,578 @@
+
+.lawyer-details-page {
+  min-height: 100vh;
+  padding: 35px 7% 65px;
+  background: #f7f5f0;
+  color: #17243b;
+}
+
+.details-container {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.details-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  color: #89909c;
+  font-size: 12px;
+  margin-bottom: 22px;
+}
+
+.details-breadcrumb a {
+  color: #a17c42;
+  text-decoration: none;
+}
+
+.details-breadcrumb a:hover {
+  color: #101d36;
+}
+
+.back-to-lawyers {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #697487;
+  text-decoration: none;
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+
+.back-to-lawyers:hover {
+  color: #a17c42;
+}
+
+/* Profile header */
+.lawyer-profile-header {
+  background: linear-gradient(115deg, #101d36, #263d5d);
+  border-radius: 16px;
+  padding: 35px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  color: white;
+  box-shadow: 0 12px 30px rgba(16, 29, 54, 0.10);
+}
+
+.lawyer-profile-header .profile-avatar {
+  width: 105px;
+  height: 105px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(145deg, #f1dfbd, #c5a46d);
+  color: #101d36;
+  font-size: 29px;
+  font-weight: 800;
+  border-radius: 22px;
+  border: 3px solid rgba(255,255,255,0.25);
+}
+
+.profile-main-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.profile-verified {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #e1c58f;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  background: rgba(255,255,255,0.08);
+  padding: 7px 11px;
+  border-radius: 20px;
+}
+
+.profile-main-info h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  margin: 12px 0 5px;
+  color: #fff;
+}
+
+.profile-main-info .profile-profession {
+  color: #d0d8e5;
+  font-size: 14px;
+  margin: 0;
+}
+
+.profile-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 17px;
+  margin-top: 20px;
+}
+
+.profile-meta span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  color: #e0e5ed;
+}
+
+.profile-meta svg {
+  color: #d2b47c;
+}
+
+/* Booking box */
+.profile-booking-box {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  min-width: 205px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 21px;
+  color: #17243b;
+}
+
+.profile-booking-box .booking-label {
+  color: #828b99;
+  font-size: 12px;
+}
+
+.profile-booking-box > strong {
+  font-size: 29px;
+  color: #17243b;
+}
+
+.profile-booking-box .booking-subtitle {
+  font-size: 11px;
+  color: #9299a4;
+}
+
+.profile-booking-box > a,
+.profile-book-link {
+  background: #c5a46d;
+  color: #101d36;
+  text-decoration: none;
+  border-radius: 7px;
+  padding: 13px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 750;
+  transition: 0.25s ease;
+}
+
+.profile-booking-box > a:hover,
+.profile-book-link:hover {
+  background: #101d36;
+  color: white;
+}
+
+/* Profile highlights */
+.profile-highlights {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin: 22px 0;
+}
+
+.profile-highlight {
+  background: white;
+  border: 1px solid #ebe7df;
+  border-radius: 12px;
+  padding: 19px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.highlight-icon {
+  width: 43px;
+  height: 43px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  background: #f2eee5;
+  color: #a17c42;
+}
+
+.profile-highlight > div:last-child {
+  min-width: 0;
+}
+
+.profile-highlight strong {
+  display: block;
+  color: #17243b;
+  font-size: 15px;
+  overflow-wrap: anywhere;
+}
+
+.profile-highlight span {
+  display: block;
+  color: #858d99;
+  font-size: 11px;
+  margin-top: 4px;
+}
+
+/* Details layout */
+.profile-details-grid {
+  display: grid;
+  grid-template-columns: 1.55fr 1fr;
+  gap: 23px;
+  margin-top: 22px;
+  align-items: start;
+}
+
+.profile-about,
+.profile-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+
+.profile-section-card {
+  background: white;
+  border: 1px solid #ebe7df;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 16px rgba(16, 29, 54, 0.025);
+}
+
+.profile-section-heading {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-bottom: 18px;
+}
+
+.section-heading-icon {
+  width: 37px;
+  height: 37px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  background: #f2eee5;
+  color: #a17c42;
+  border-radius: 9px;
+}
+
+.profile-section-heading h2,
+.profile-section-heading h3 {
+  font-size: 17px;
+  color: #17243b;
+  margin: 0;
+}
+
+.profile-section-card > h3 {
+  font-size: 17px;
+  color: #17243b;
+  margin: 0 0 10px;
+}
+
+.profile-about-text,
+.profile-section-card > p {
+  color: #707a8b;
+  font-size: 13px;
+  line-height: 1.9;
+  margin: 0;
+}
+
+/* Specialization */
+.profile-specialization {
+  display: inline-flex;
+  background: #f2eee5;
+  color: #987644;
+  padding: 10px 15px;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 650;
+}
+
+/* Languages */
+.profile-language-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.profile-language-list span {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: #f7f5f0;
+  color: #596477;
+  padding: 9px 12px;
+  border-radius: 7px;
+  font-size: 12px;
+}
+
+.profile-language-list svg {
+  color: #a17c42;
+}
+
+/* Information */
+.profile-information-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 13px 0;
+  border-bottom: 1px solid #eeeae3;
+  font-size: 12px;
+}
+
+.profile-information-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.profile-information-row span {
+  color: #858d99;
+}
+
+.profile-information-row strong {
+  color: #26344b;
+  text-align: right;
+}
+
+/* Consultation options */
+.sidebar-description {
+  margin-bottom: 15px !important;
+  font-size: 12px !important;
+}
+
+.consultation-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 0;
+  border-bottom: 1px solid #eeeae3;
+  font-size: 13px;
+  color: #626c7d;
+}
+
+.consultation-option:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.consultation-option-icon {
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  background: #f2eee5;
+  color: #a17c42;
+}
+
+.consultation-option > span {
+  flex: 1;
+}
+
+.option-check {
+  color: #45a477;
+}
+
+/* Availability */
+.profile-availability {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #596477;
+  font-size: 13px;
+  margin: 0 !important;
+}
+
+.profile-availability span {
+  width: 9px;
+  height: 9px;
+  background: #45a477;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(69,164,119,0.12);
+}
+
+.availability-divider {
+  height: 1px;
+  background: #eeeae3;
+  margin: 19px 0;
+}
+
+.sidebar-fee {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 17px;
+}
+
+.sidebar-fee span {
+  color: #858d99;
+  font-size: 12px;
+}
+
+.sidebar-fee strong {
+  font-size: 21px;
+  color: #17243b;
+}
+
+.profile-book-link {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.booking-disclaimer {
+  color: #9299a4 !important;
+  font-size: 10px !important;
+  text-align: center;
+  margin-top: 12px !important;
+}
+
+/* Trust card */
+.profile-trust-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 18px;
+  background: #f0eade;
+  border: 1px solid #e6dac3;
+  border-radius: 11px;
+  color: #987644;
+}
+
+.profile-trust-card > svg {
+  flex-shrink: 0;
+}
+
+.profile-trust-card strong {
+  display: block;
+  color: #6e5736;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.profile-trust-card p {
+  color: #837253;
+  font-size: 11px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Demo note */
+.profile-demo-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  color: #8b7958;
+  font-size: 11px;
+  line-height: 1.6;
+  margin-top: 25px;
+}
+
+.profile-demo-note svg {
+  flex-shrink: 0;
+}
+
+/* Not found */
+.lawyer-not-found {
+  padding: 100px 20px;
+  text-align: center;
+  background: #f7f5f0;
+  color: #17243b;
+  min-height: 400px;
+}
+
+.lawyer-not-found > svg {
+  color: #b29360;
+}
+
+.lawyer-not-found h2 {
+  margin: 15px 0 8px;
+}
+
+.lawyer-not-found p {
+  color: #858d99;
+  font-size: 13px;
+}
+
+.lawyer-not-found a {
+  display: inline-flex;
+  margin-top: 15px;
+  color: #a17c42;
+  text-decoration: none;
+  font-weight: 650;
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+  .lawyer-profile-header {
+    flex-wrap: wrap;
+  }
+
+  .profile-booking-box {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .profile-highlights {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .profile-details-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .lawyer-details-page {
+    padding: 25px 5% 45px;
+  }
+
+  .lawyer-profile-header {
+    padding: 23px;
+    gap: 17px;
+  }
+
+  .lawyer-profile-header .profile-avatar {
+    width: 75px;
+    height: 75px;
+    font-size: 23px;
+    border-radius: 15px;
+  }
+
+  .profile-main-info h1 {
+    font-size: 25px;
+  }
+
+  .profile-meta {
+    flex-direction: column;
+    gap: 11px;
+  }
+
+  .profile-highlights {
+    gap: 10px;
+  }
+
+  .profile-highlight {
+    padding: 13px;
+    gap: 9px;
+  }
+
+  .highlight-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .profile-highlight strong {
+    font-size: 13px;
+  }
+
+  .profile-section-card {
+    padding: 19px;
+  }
+
+  .profile-information-row {
+    align-items: flex-start;
+  }
+}

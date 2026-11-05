@@ -1,0 +1,152 @@
+.auth-page {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 55px 20px;
+  background: #f7f5f0;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 460px;
+  background: #ffffff;
+  padding: 42px;
+  border-radius: 14px;
+  box-shadow: 0 12px 40px rgba(16, 29, 54, 0.08);
+}
+
+.auth-heading {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.auth-icon {
+  width: 62px;
+  height: 62px;
+  background: #f5efe3;
+  color: #c5a46d;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 18px;
+}
+
+.auth-heading h1 {
+  color: #101d36;
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  margin-bottom: 9px;
+}
+
+.auth-heading p {
+  color: #777f8d;
+  font-size: 14px;
+}
+
+.auth-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-card form label {
+  color: #26334a;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 17px 0 9px;
+}
+
+.auth-input {
+  min-height: 50px;
+  border: 1px solid #e2e4e8;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 0 14px;
+  color: #8a91a0;
+}
+
+.auth-input:focus-within {
+  border-color: #c5a46d;
+}
+
+.auth-input input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #101d36;
+  font-size: 14px;
+}
+
+.password-toggle {
+  border: none;
+  background: transparent;
+  color: #777f8d;
+  cursor: pointer;
+  display: flex;
+}
+
+.auth-submit {
+  margin-top: 25px;
+  min-height: 50px;
+  background: #101d36;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.auth-submit:hover {
+  background: #c5a46d;
+}
+
+.auth-error {
+  color: #c0392b;
+  font-size: 13px;
+  margin-top: 12px;
+}
+
+.auth-switch {
+  text-align: center;
+  color: #777f8d;
+  font-size: 14px;
+  margin-top: 25px;
+}
+
+.auth-switch a {
+  color: #b18d50;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.demo-login {
+  margin-top: 25px;
+  padding: 15px;
+  background: #f7f5f0;
+  border-radius: 7px;
+  color: #354056;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.demo-login strong {
+  color: #101d36;
+  font-size: 13px;
+}
+
+@media (max-width: 480px) {
+  .auth-card {
+    padding: 28px 22px;
+  }
+
+  .auth-heading h1 {
+    font-size: 26px;
+  }
+}

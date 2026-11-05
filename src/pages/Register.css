@@ -1,0 +1,32 @@
+.register-card {
+  max-width: 480px;
+}
+
+.register-card .auth-heading {
+  margin-bottom: 25px;
+}
+
+.register-card form label {
+  margin-top: 14px;
+}
+
+.role-select {
+  width: 100%;
+  min-height: 50px;
+  padding: 0 13px;
+  border: 1px solid #e2e4e8;
+  border-radius: 7px;
+  background: #ffffff;
+  color: #354056;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+}
+
+.role-select:focus {
+  border-color: #c5a46d;
+}
+
+.register-card .auth-submit {
+  margin-top: 22px;
+}
